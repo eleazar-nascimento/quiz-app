@@ -16,7 +16,7 @@ export const useQuizLogic = () => {
       });
     });
 
-    const maxScore = Math.max(...Object.values(scores));
+    const maxScore = Math.max(...Object.values(scores) as any);
     return Object.keys(scores).find(key => scores[key] === maxScore);
   };
 

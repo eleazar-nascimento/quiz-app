@@ -1,4 +1,4 @@
-export const TRANSLATIONS = {
+export const TRANSLATIONS: any = {
   "pt-BR": {
     "discoverTitle": "Descubra Seu",
     "attachmentStyleTitle": "Estilo de Apego",
