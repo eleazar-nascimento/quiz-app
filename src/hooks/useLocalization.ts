@@ -1,4 +1,4 @@
-import { TRANSLATIONS } from "../mocks/translations";
+import { TRANSLATIONS } from "../constants/translations";
 
 export const useLocalization = () => {
   const DEFAULT_LOCALE = 'pt-BR'; 
@@ -8,7 +8,7 @@ export const useLocalization = () => {
     if (TRANSLATIONS[locale]) return locale;
     const lang = locale.split('-')[0];
     const match = Object.keys(TRANSLATIONS).find(key => key.startsWith(lang + '-'));
-    return match || DEFAULT_LOCALE;
+    return match || DEFAULT_LOCALE;  
   };
   
   const currentLocale = findMatchingLocale(browserLocale);

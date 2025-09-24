@@ -1,4 +1,4 @@
-import AttachmentStyleQuiz from './components/AttachmentStyleQuiz'
+import AttachmentStyleQuiz from "./pages/AttachmentStyleQuizz"
 
 function App() {
   return (
