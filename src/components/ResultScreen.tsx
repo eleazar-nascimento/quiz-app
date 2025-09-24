@@ -1,4 +1,4 @@
-import { ActionButton } from "./ActionButton";
+import { ActionButton } from "./shared/ActionButton";
 import { GrowthSection } from "./GrowthSection";
 import { StrengthsSection } from "./StrengthsSection";
 

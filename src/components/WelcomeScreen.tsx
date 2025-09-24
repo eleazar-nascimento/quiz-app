@@ -1,4 +1,4 @@
-import { ActionButton } from "./ActionButton";
+import { ActionButton } from "./shared/ActionButton";
 
 export const WelcomeScreen = ({ translate, onStart }) => (
   <div className="text-center space-y-8">
