@@ -1,5 +1,5 @@
-import { OptionButton } from "./OptionButton";
-import { ProgressBar } from "./ProgressBar";
+import { OptionButton } from "./shared/OptionButton";
+import { ProgressBar } from "./shared/ProgressBar";
 
 export const QuizScreen = ({ 
   translate, 
