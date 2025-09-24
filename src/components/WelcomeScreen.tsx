@@ -1,6 +1,6 @@
 import { ActionButton } from "./shared/ActionButton";
 
-export const WelcomeScreen = ({ translate, onStart }) => (
+export const WelcomeScreen = ({ translate, onStart }: any) => (
   <div className="text-center space-y-8">
     <div className="relative">
       <div className="absolute inset-0 blur-3xl bg-gradient-to-r from-pink-500 to-violet-600 opacity-30 rounded-full"></div>

@@ -2,7 +2,7 @@ import { ActionButton } from "./shared/ActionButton";
 import { GrowthSection } from "./GrowthSection";
 import { StrengthsSection } from "./StrengthsSection";
 
-export const ResultScreen = ({ translate, result, attachmentStyles, onRestart }) => (
+export const ResultScreen = ({ translate, result, attachmentStyles, onRestart }: any) => (
   <div className="space-y-8">
     <div className="text-center">
       <div className={`inline-flex p-6 rounded-full bg-gradient-to-br ${attachmentStyles[result].color} text-white mb-6 shadow-2xl`}>

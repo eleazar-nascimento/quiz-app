@@ -2,13 +2,13 @@ import { useState } from "react";
 
 export const useQuizLogic = () => {
   const [currentScreen, setCurrentScreen] = useState('welcome');
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState([]);
-  const [result, setResult] = useState(null);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState<any>(0);
+  const [answers, setAnswers] = useState<Array<any>>([]);
+  const [result, setResult] = useState<any>(null);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   const calculateResult = () => {
-    const scores = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
+    const scores: any = { secure: 0, anxious: 0, avoidant: 0, fearful: 0 };
     
     answers.forEach(answer => {
       Object.keys(scores).forEach(style => {
@@ -20,7 +20,7 @@ export const useQuizLogic = () => {
     return Object.keys(scores).find(key => scores[key] === maxScore);
   };
 
-  const handleAnswer = (option, questionsLength) => {
+  const handleAnswer = (option: any, questionsLength: any) => {
     setIsAnimating(true);
     const newAnswers = [...answers, option];
     setAnswers(newAnswers);

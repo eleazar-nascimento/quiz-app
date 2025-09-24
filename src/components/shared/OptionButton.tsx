@@ -1,4 +1,4 @@
-export const OptionButton = ({ option, onClick, disabled }) => (
+export const OptionButton = ({ option, onClick, disabled }: any) => (
   <button
     onClick={onClick}
     disabled={disabled}

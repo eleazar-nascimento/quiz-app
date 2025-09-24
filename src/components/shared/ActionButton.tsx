@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 
-export const ActionButton = ({ onClick, children }) => (
+export const ActionButton = ({ onClick, children }: any) => (
   <button
     onClick={onClick}
     className="group relative inline-flex items-center gap-3 bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:shadow-2xl shadow-lg"

@@ -1,4 +1,4 @@
-export const ProgressBar = ({ current, total }) => (
+export const ProgressBar = ({ current, total }: any) => (
   <div className="flex gap-2">
     {Array.from({ length: total }, (_, index) => (
       <div

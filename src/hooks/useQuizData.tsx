@@ -1,6 +1,6 @@
 import { Heart, Shield, Users, Zap } from "lucide-react";
 
-export const useQuizData = (translate) => {
+export const useQuizData = (translate: any) => {
   const questions = [
     {
       text: translate('question1'),

@@ -7,7 +7,7 @@ export const QuizScreen = ({
   questions, 
   onAnswer, 
   isAnimating 
-}) => (
+}: any) => (
   <div className="space-y-8">
     <div className="flex justify-between items-center mb-8">
       <ProgressBar current={currentQuestion} total={questions.length} />
@@ -22,7 +22,7 @@ export const QuizScreen = ({
       </h2>
       
       <div className="space-y-3">
-        {questions[currentQuestion].options.map((option, index) => (
+        {questions[currentQuestion].options.map((option: any, index: any) => (
           <OptionButton
             key={index}
             option={option}

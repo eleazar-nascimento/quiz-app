@@ -18,7 +18,7 @@ const AttachmentStyleQuiz = () => {
     startQuiz
   } = useQuizLogic();
 
-  const handleAnswerWithContext = (option) => {
+  const handleAnswerWithContext = (option: any) => {
     handleAnswer(option, questions.length);
   };
 
